@@ -67,7 +67,7 @@ To validate the input we get from client, we've used validation annotations that
 
 * @Max : This annotation is used to validate that the annotated field is not greater than the mentioned value in field.
 
-*@Min : This annotation is used to validate that the annotated field is not smaller than the mentioned value in field.
+* @Min : This annotation is used to validate that the annotated field is not smaller than the mentioned value in field.
 ---
 <br>
 
