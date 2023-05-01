@@ -2,6 +2,7 @@ package com.geekster.University_Event._Management.controller;
 
 import com.geekster.University_Event._Management.model.Event;
 import com.geekster.University_Event._Management.service.EventService;
+import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class EventController {
     }
 
     @GetMapping(value = "events")
-    public List<Event> getEventsBasedOnDate(@RequestParam String date){
+    public List<Event> getEventsBasedOnDate(@Nullable @RequestParam String date){
 
         return eventService.getEventsBasedOnDate(date);
     }

@@ -49,6 +49,9 @@ public class EventService {
     }
 
     public List<Event> getEventsBasedOnDate(String date) {
+        if(date==null){
+            return eventRepo.findAll();
+        }
         LocalDate localDate = LocalDate.parse(date);
         return eventRepo.findByDate(localDate);
     }

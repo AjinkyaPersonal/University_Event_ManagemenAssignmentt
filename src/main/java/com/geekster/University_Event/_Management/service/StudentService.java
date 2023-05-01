@@ -22,10 +22,10 @@ public class StudentService {
         Iterable<Student> list_of_jobs = studentRepo.saveAll(studentList);
 
         if(list_of_jobs==null){
-            return "Jobs not added successfully";
+            return "Student not added successfully";
         }
 
-        return "Jobs added successfully";
+        return "Student added successfully";
 
     }
 
